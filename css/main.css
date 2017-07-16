@@ -100,15 +100,47 @@ h1{
     margin-bottom: 50px;
     color: rgb(140,57,20);
     font-weight: bold;
-    
+
 }
 
-img
-{
-    max-width: 120px;
-    max-height: 200px;
- }   
 
+.imrang1, .imrang2
+{
+    /*max-width: 120px*/
+    /*max-height: 180px;*/
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+ }  
+ .newdiv, .newdiv2
+ {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+ } 
+.col
+{
+    padding: 0px;
+}
+.imaged1, .imaged2
+{
+    width: 180px;
+    border:1px solid red;
+    height: 200px;
+    margin: 0px 5px;
+    position: relative
+
+}
+
+#score
+{
+  width: 50px;
+  height:45px;
+  border:2px solid rgb(2,90,165);
+  margin-left: 20px;
+}
     
 
 
