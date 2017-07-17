@@ -30,14 +30,9 @@ function melange(t)
 
   
 }
-//change the image of the first div
-document.getElementById("jouer").addEventListener("click",function(){
-    melange(t1);
-    melange(t2);
-
-               
-
-                for(let i=0;i<7;i++)
+function rejouer()
+{
+	   for(let i=0;i<7;i++)
              {
                   div[i].style.backgroundColor=tb1[i];
                   div2[i].style.backgroundColor=tb1[i];
@@ -55,7 +50,19 @@ document.getElementById("jouer").addEventListener("click",function(){
               
          }
                document.getElementById("score").innerHTML=0;
+               score=0;
 
+}
+
+
+//change the image of the first div
+document.getElementById("jouer").addEventListener("click",function(){
+    melange(t1);
+    melange(t2);
+     rejouer();
+               
+
+             
    });  
 
 var src1="";
@@ -68,16 +75,29 @@ function affich(img)
      { src1=img.src;
      	firstimage=img;
        img.style.opacity=1;
+         //  firstimage.ondblclick = function(e) {
+         //      e.stopImmediatePropagation();
+         // }
+
+
      }
     else 
      {
      	  src2=img.src;
      	  img.style.opacity=1;
+     	   
      	     if(src1===src2)
             {
      	           score++;
      	           document.getElementById("score").innerHTML=score;
-     	           if(score==7){ alert("tu as gagnier");}
+     	           img.style.cursor="none";
+     	           img.classList.add("souris");
+     	  	       firstimage.classList.add("souris");
+     	           if(score==7){ 
+     	           	alert("tu as gagnier");
+     	           	rejouer();
+                      
+     	           }
      	           src1="";
      	           src2="";
      	           
@@ -87,6 +107,7 @@ function affich(img)
      	            	// console.log(firstimage);
      	            	 img.style.opacity=0;
      	  	            firstimage.style.opacity=0;
+     	  	            
      	  	           
      	  	             src1="";
      	                src2="";

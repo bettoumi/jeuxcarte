@@ -136,6 +136,10 @@ h1{
   border:2px solid rgb(2,90,165);
   margin-left: 20px;
 }
+.souris
+{
+    pointer-events: none;
+}
     
 
 
