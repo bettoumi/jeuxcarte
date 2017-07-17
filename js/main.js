@@ -68,41 +68,43 @@ function affich(img)
      { src1=img.src;
      	firstimage=img;
        img.style.opacity=1;
-      console.log("src1= "+src1);
      }
     else 
      {
      	  src2=img.src;
      	  img.style.opacity=1;
-     	  console.log("scr2= "+src2);
      	     if(src1===src2)
             {
      	           score++;
-     	          document.getElementById("score").innerHTML=score;
-     	           img.style.opacity=1;
-     	           firstimage.style.opacity=1;
-     	           scr1="";
-     	           src2="";
+     	           document.getElementById("score").innerHTML=score;
+     	           // console.log(score);
+     	           //   console.log(src1);
 
+     	           //    console.log(src2);
+     	           // img.style.cursor="none";
+     	           // firstimage.style.cursor="none";
+     	           src1="";
+     	           src2="";
+     	           
               }
            else{
      	            setTimeout(function(){
+     	            	// console.log(firstimage);
+     	            	 img.style.opacity=0;
      	  	            firstimage.style.opacity=0;
-     	  	             img.style.opacity=0;
+     	  	           
+     	  	             src1="";
+     	                src2="";
 
-     	            },2000); 
-
-     	            src1="";
-     	           src2="";
+     	            },1000); 
+         
 
                }
-    
+            
      }
 
-     
-
-
-     
+       //firstimage="" ;  
+      
 
 
   } 
