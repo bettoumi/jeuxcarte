@@ -77,12 +77,7 @@ function affich(img)
             {
      	           score++;
      	           document.getElementById("score").innerHTML=score;
-     	           // console.log(score);
-     	           //   console.log(src1);
-
-     	           //    console.log(src2);
-     	           // img.style.cursor="none";
-     	           // firstimage.style.cursor="none";
+     	           if(score==7){ alert("tu as gagnier");}
      	           src1="";
      	           src2="";
      	           
