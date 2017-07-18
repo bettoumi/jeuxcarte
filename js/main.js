@@ -9,7 +9,6 @@ var div2=document.getElementsByClassName("imaged2");
 var score=0;
 
 
-//Math.floor(Math.random() * 10);
 function echange(t, x,y)
 {
    var z=t[x];
@@ -119,8 +118,7 @@ function affich(img)
             
      }
 
-       //firstimage="" ;  
-      
+       
 
 
   } 
@@ -135,85 +133,7 @@ function affich(img)
 
 
 
-//change the image of the second div 
-// document.getElementById("jouer").addEventListener("click", function(){
-   
-   
-//          for(i=0;i<rang2.length;i++)
-//          {
-         	
-         	
-         	
-//          }
-   
 
-// });
- 
- // for( let i=0;i<7;i++)
- //   {     
- 	 
- 	 
- // 	  newdiv[i].addEventListener("click", function(){
- 	      
- //          rang1[i].style.zIndex = "100";
-       
-  
- //          newdiv[i].style.zIndex = "-100"; 
- //          for(let j=0;j<7;j++)
- //          {
- //          	if(i!=j){ newdiv[j].style.cursor="none";}
- //          }
-         
-         
- //                         for( let k=0;k<7;k++)
- //                         {
- //                                newdiv2[k].addEventListener("click", function(){
- 	      
- //                                               rang2[k].style.zIndex = "100";
-         
-	// 				                           newdiv2[k].style.zIndex = "-100"; 
-					                     
-	// 				                           for(let j=0;j<7;j++)
-	// 				                                   {
-	// 				          	                          if(k!=j){ newdiv2[j].style.cursor="none";}
-	// 				                                     } 
-
-	// 				               //console.log(rang2[k].src);
-	// 				               //console.log(rang1[i].src);
-	// 				                       if(rang1[i].src===rang2[k].src)
-	// 				                       	   { score++;
-	// 				                       	   	  document.getElementById("score").innerHTML=score;
-
-	// 				                             }  else{ 
-	// 				                             	          setTimeout(function(){
-	// 				                             	          	        rang1[i].style.zIndex = "-100";
- //                                                                       rang2[k].style.zIndex = "-100";
- //                                                                                          },2000) ;}           
-            
-                      
- //                                     for(let l=0;l<7;l++)
- //                                       {
- //                                       	  newdiv[l].style.cursor="default";
- //          	                             newdiv2[l].style.cursor="default";
-          	                             
- //          	                            } 
-             
-					                  
-	// 				              });
-                                
-           
- //                          }
-
- //          });
-         
-      
- // }  
-   
-
-
- 
-   //test code
-   
 
 
 
